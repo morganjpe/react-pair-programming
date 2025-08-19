@@ -3,10 +3,5 @@ import { NextResponse } from "next/server";
 import data from "./data.json";
 
 export const GET = () => {
-  return NextResponse.json(
-    {
-      data,
-    },
-    { status: 200 }
-  );
+  return NextResponse.json(data);
 };
